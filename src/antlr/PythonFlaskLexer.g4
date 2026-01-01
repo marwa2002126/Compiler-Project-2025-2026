@@ -262,13 +262,11 @@ IDENTIFIER
     ;
 
 
-// NEWLINE now without trailing whitespace
 NEWLINE_TOKEN
     : ('\r'? '\n' | '\r')
     ;
 
 
-// WS is NOT skipped - it's used by the lexer to calculate indent
 WS
     : [ 	]+ -> channel(HIDDEN)
     ;

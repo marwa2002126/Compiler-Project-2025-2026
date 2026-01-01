@@ -74,7 +74,6 @@ decorator
     : AT dotName (LPAREN arguments? RPAREN)? NEWLINE_TOKEN+
     ;
 
-// Fixed: parameters now properly wrapped in parentheses and optional
 parameters
     : LPAREN (parameter (COMMA parameter)*)? RPAREN
     ;
